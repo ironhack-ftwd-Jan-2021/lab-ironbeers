@@ -3,10 +3,12 @@ body {
    margin: 0;
    padding: 0;
    font-family:  Arial, Helvetica, sans-serif;
-    /* light-blue: #2081c3;
-    dark-blue: #0a2c42;
-    grey: #bfbfbf;
-    font-family: Arial, Helvetica, sans-serif; */
+    /* grey: #bfbfbf; */
+}
+
+.nav-bar {
+    background-color: #2081c3;
+    color: #0a2c42;
 }
 
 .nav-bar ul {
