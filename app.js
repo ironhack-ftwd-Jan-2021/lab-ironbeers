@@ -10,7 +10,7 @@ const punkAPI = new PunkAPIWrapper();
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'views'));
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.use('/public', express.static(path.join(__dirname + 'public')));
 
 // Register the location for handlebars partials here:
 const handlebars = require('hbs');
@@ -23,8 +23,6 @@ handlebars.registerPartials(__dirname + '/views/partials');
 app.get('/', (req, res) => {
   res.render('index',);
 });
-
-
 
 app.get('/beers', (req, res) => {
   punkAPI
